@@ -1,0 +1,177 @@
+.homepage {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.homepage__video-bg {
+  position: fixed;
+  z-index: -1;
+}
+
+.homepage__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.homepage__content h1 {
+  font-size: 8rem;
+}
+
+.homepage__content-horizontal-line {
+  width: 70%;
+  height: 2px;
+  background: #fff;
+  margin: 1.5em 0em;
+}
+
+.homepage__content-cta-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homepage__content-cta-container h4 {
+  font-size: 3rem;
+}
+
+.homepage__content-cta-container a {
+  border-radius: 20px;
+  background: #fff;
+  color: #000000;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  margin-left: 1em;
+  font-size: 2em;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  .homepage__video-bg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  .homepage__video-bg {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .homepage {
+    background: url("../resources/video/Animation Of Stars loading img.PNG");
+  }
+  .homepage__video-bg {
+    display: none;
+  }
+}
+
+.side-nav {
+  width: 10vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.side-nav__list {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-nav__list-item {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.side-nav__list-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 1.6rem;
+  letter-spacing: 10px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.side-nav__list-item:hover {
+  cursor: pointer;
+  border-right: 2px solid white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

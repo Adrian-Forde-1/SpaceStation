@@ -1,0 +1,79 @@
+.homepage {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  &__video-bg {
+    position: fixed;
+    z-index: -1;
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    h1 {
+      font-size: 8rem;
+    }
+
+    &-horizontal-line {
+      width: 70%;
+      height: 2px;
+      background: #fff;
+      margin: 1.5em 0em;
+    }
+
+    &-cta-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h4 {
+        font-size: 3rem;
+      }
+
+      a {
+        border-radius: 20px;
+        background: #fff;
+        color: #000000;
+        padding: 0.5em 1.5em;
+        text-decoration: none;
+        margin-left: 1em;
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .homepage {
+    &__video-bg {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .homepage {
+    &__video-bg {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .homepage {
+    &__video-bg {
+      display: none;
+    }
+    background: url('../resources/video/Animation\ Of\ Stars\ loading\ img.PNG');
+  }
+}
